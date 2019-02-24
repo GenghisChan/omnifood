@@ -193,6 +193,14 @@ header {
 }
 
 /** -------------------------- **/
+/* FEATURES */
+/**--------------------------- **/
+
+.section-features .long-copy {
+  margin-bottom: 30px
+}
+
+/** -------------------------- **/
 /* MEALS */
 /**--------------------------- **/
 
@@ -214,11 +222,37 @@ header {
 .meal-photo {
   width: 100%;
   margin: 0;
+  overflow: hidden;
+  background-color: #000;
 }
 
 .meal-photo img {
   width: 100%;
   height: auto;
-  margin-top: -9px;
+  transform: scale(1.15);
+  transition: transform .5s, opacity .5s;
+  opacity: 0.7;
 
+}
+
+.meal-photo img:hover {
+  transform: scale(1.08);
+  opacity: 1;
+
+}
+
+.steps {
+  display: grid;
+  background-color: lightblue;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.iPhone img {
+  width: 60%;
+}
+
+.instructions {
+  position: absolute;
+  left: 50%;
 }
