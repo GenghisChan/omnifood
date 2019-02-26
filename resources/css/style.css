@@ -154,6 +154,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -331,16 +332,137 @@ header {
   color: #e67e22
 }
 
-
+.city-feature a {
+  text-decoration: none;
+}
 
 .city-feature a:link,
 .city-feature a:visited {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   padding-bottom: 8px;
 }
 
 .city-feature a:hover,
 .city-feature a:active {
-  transition: border-bottom .4s;
-  border-bottom: 2px solid #e67e22;
+  transition: border-bottom .5s;
+  border-bottom: 1px solid #e67e22;
+}
+
+.testimonials-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+.feedback-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 20px;
+}
+
+.feedback {
+  padding: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+blockquote:before {
+  content: "\201c";
+  font-size: 400%;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  font-weight: 300;
+}
+
+blockquote {
+  font-weight: 100;
+  font-style: italic;
+  line-height: 145%;
+}
+
+cite {
+  margin-top: 20px;
+  font-size: 90%;
+
+  display: block;
+  font-weight: 100;
+  padding-top: 20px;
+}
+
+
+cite img {
+  border-radius: 50%;
+  height: 45px;
+  float: left;
+  margin-right: 10px;
+  margin-top: -7px;
+}
+
+.plans-section {
+  background-color: #f4f4f4;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.plan {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.plan div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan div:first-child {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan div:last-child {
+  border-bottom: none;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22
+}
+
+.plan div:last-child {
+  text-align: center;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-details ul {
+  list-style: none;
+}
+
+.plan-details ul li {
+  padding: 5px 0;
+}
+
+.plan-details ul ion-icon {
+  color: #e67e22;
+  padding-right: 20px;
+}
+
+.plan-price-meal {
+  font-size: 80%;
 }
